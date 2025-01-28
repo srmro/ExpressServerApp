@@ -8,5 +8,5 @@ Leaning mostly on Express.js
 Tried to make an Express Server Application based on the car you've chosen.
 Created 3 databases (cars, specs, pictures)
 
-Progressing onto middlware, and accomplishing the get, post, put/patch, delete request
+Progressing onto middleware, and accomplishing the get, post, put/patch, delete request
 
