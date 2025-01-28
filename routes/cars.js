@@ -8,7 +8,11 @@ const { cars } = require("../categories.js")
 
 
 router.get("/api/cars", (request, response) => {
-// console.log(request.query);
+response.status(200).send(`${cars}`);
+
+    // console.log(request.query);
+
+
 // const {
 //     query:{filter, value},
 // } = request;

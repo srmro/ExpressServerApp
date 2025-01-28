@@ -19,10 +19,11 @@ const logMiddleware = require("./middleware/log.js");
 const carRoutes = require("./routes/cars.js");
 const pictureRoute = require("./routes/pictures.js");
 const specsRoute = require("./routes/specs.js");
+// const { cars } = require("./categories.js");
 
-app.use("/cars", carRoutes );
-app.use("/pictures", pictureRoute );
-app.use("/specs", specsRoute );
+app.use("/api/cars", carRoutes );
+app.use("/api/pictures", pictureRoute );
+app.use("/api/specs", specsRoute);
 
 
 //base url
