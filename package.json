@@ -5,8 +5,8 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon ./application/index.mjs",
-    "start": "node ./application/index.mjs"
+    "start:dev": "nodemon ./application/index.js",
+    "start": "node ./application/index.js"
   },
   "keywords": [],
   "author": "",

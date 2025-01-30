@@ -1,4 +1,4 @@
-// import express from 'express';
+
 const express = require("express")
 const app = express();
 
@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3040;
 
 
 // //middleware
-const logMiddleware = require("./middleware/log.js");
+// const logMiddleware = require("./middleware/log.js");
 // const userRoutes = require("./routes/routes.js");
 
 
@@ -30,7 +30,7 @@ app.use("/api/specs", specsRoute);
 app.get("/", (request, response) => {
     response.status(201).send
     ({msg: "You made it!", findCars:"use /api/cars ", findSpecs: "use api/specs", findPics: "use api/pics"});
-})
+});
 
 
 
@@ -38,3 +38,6 @@ app.get("/", (request, response) => {
 app.listen(PORT, () => {
     console.log(`Server is running on ${PORT}...`);
 });
+
+
+const logMiddleware = require("./middleware/log.js");
